@@ -67,18 +67,7 @@ def gaussElim(aMat_in, bMat_in):
         results[i] = (newBMat[i] - sumMat)/newAMat[i,i]
     return results
 
-#Implementation test
-
-#Test1
-#aMat_in = np.array([[2, -1, 3, 5],[6, -3, 12, 11],[4, -1, 10, 8],[0, -2, -8, 10]])
-#bMat_in = (np.array([[-7, 4, 4, -60]]))
-#results = gaussElim(aMat_in,bMat_in)
-
-#Test2 - Gauss-Jordan
-#aMat_in = np.array([[-1, 0, 2, 0],[4, 1, 4, 1],[2, 2, -1, 1],[0, 0, 1, 0]])
-#bMat_in = np.array([[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]])
-#results = gaussElim(aMat_in,bMat_in)
-#print(results)
+#Implementation Example
 
 #Test3
 aMat_in = np.array([[1,0,0,0],[1,0.5,pow(0.5,2),pow(0.5,3)],[1,0.75,pow(0.75,2),pow(0.75,3)],[1,1,1,1]])
@@ -97,9 +86,3 @@ while refError > 1e-5:
     refError = (abs(np.subtract(oldResultsRef,resultsRef))).max()
 finalResult = resultsRef
 print(finalResult)
-
-#Condensation
-#and (checkMat[line1Aux, line2] == 0 or abs(checkMat[line1Aux, line2]) != abs(checkMat[line1:,line2]).max()):
-#or (abs(augMat[i,j]) != abs(augMat[i:,j]).max())
-
-
