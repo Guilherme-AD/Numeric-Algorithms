@@ -1,7 +1,6 @@
 #------------------------------------------------#
 # Gauss Elimination Linear System Numeric Solver #
-#              MAP3121 - 10/05/21                #
-#          Guilherme Alvarenga Dias              #
+#                   10/05/21                     #
 #------------------------------------------------#
 
 #Auxilary 
@@ -69,7 +68,7 @@ def gaussElim(aMat_in, bMat_in):
 
 #Implementation Example
 
-#Test3
+#Test
 aMat_in = np.array([[1,0,0,0],[1,0.5,pow(0.5,2),pow(0.5,3)],[1,0.75,pow(0.75,2),pow(0.75,3)],[1,1,1,1]])
 bMat_in = np.array([0,0.479,0.682,0.841])
 results = gaussElim(aMat_in,bMat_in)
