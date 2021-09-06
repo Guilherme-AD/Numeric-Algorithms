@@ -1,12 +1,11 @@
 #---------------------------------------------#
 #  Gauss-Seidel Linear System Numeric Solver  #
-#           MAP3121 - 09/05/21                #
-#        Guilherme Alvarenga Dias             #
+#                  09/05/21                   #
 #---------------------------------------------#
 
 import numpy as np
 
-#Setup (turn into function later)
+#Setup 
 n = 3
 aMat = np.array([[4,-2,-1],[-5,-15,-9],[2,2,-5]])
 xMat = np.zeros(n)
@@ -59,6 +58,3 @@ for k in range(0, itMax):
 finalVal = np.matmul(aMat, xMat)
 print("Final results are: " + str(xMat[:]))
 print("With residue: " + str(np.max(np.abs(bMat - finalVal))))
-
-
-
